@@ -1,2 +1,3 @@
 # CSCE_110_Practice
-code from in class lectures for CSCE 110.
+This is a folder of the work done during class lectures for CSCE 110. 
+This code is not important and may not work.
