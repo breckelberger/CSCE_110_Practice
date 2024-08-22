@@ -1,3 +1,5 @@
+# This is a guessing game were the bot picks a number and the user has three attempts to guess it.
+
 import random
 
 z = random.randint(1,10)
@@ -22,8 +24,10 @@ if ready in ['Yes']:
             print("That's correct!")
             break
         else:
-            print("That's not right! Try again.")
             i += 1
+            if i < x:
+                print("That's not right! Try again.")
+            
 
     if i == x:
         print("You lose!")
