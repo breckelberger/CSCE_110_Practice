@@ -38,3 +38,6 @@ print("Salary is", hourly_wage * hours)
 
 name = input("What is your first, middle and last name?: ")
 print("Howdy", name+"!") # the + gets rid of the space. Whenever a comma is used there will be a space.
+
+hello = f"The result of 5 + 3 is {5 + 3}." # this is a f string. combines both int and strings.
+print(hello)
