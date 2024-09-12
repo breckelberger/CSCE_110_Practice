@@ -12,18 +12,24 @@
 
 sentence = input("Enter a sentence without any punctuation, symbols, or numbers: ").lower()
 
-almost_letters = len(sentence)
-space_count = sentence.count(' ')
-total_letters = almost_letters - space_count
+letters = "abcdefghijklmnopqrstuvwxyz"
 
-first_letter = sentence[0]
-last_letter = sentence[-1]
+if all(char in letters or char == ' ' for char in sentence):
+    almost_letters = len(sentence)
+    space_count = sentence.count(' ')
+    total_letters = almost_letters - space_count
+
+    first_letter = sentence[0]
+    last_letter = sentence[-1]
 
 
-first_count  = sentence.count(first_letter)
-last_count = sentence.count(last_letter)
+    first_count  = sentence.count(first_letter)
+    last_count = sentence.count(last_letter)
 
-total_count = first_count + last_count
+    total_count = first_count + last_count
 
-print("This sentence has", total_letters, "letters and the first letter is", first_letter)
-print("The last letter is ", last_letter, "and the total count of the first/last letter is ", total_count)
+    print("This sentence has", total_letters, "letters and the first letter is", first_letter)
+    print("The last letter is", last_letter, "and the total count of the first/last letter is", total_count)
+
+else:
+    print("Your sentence conatined characters that were not letters.")
