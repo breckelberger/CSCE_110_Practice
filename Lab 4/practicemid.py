@@ -1,20 +1,14 @@
-mylist = [1, 3, 'breck']
+class Student:
+    
+    def __init__(self, name, id):
+        self.name = name
+        self.id = id
 
-mylist.pop(1)
+    def equality(self, other):
+        return self.name == other.name
 
-mylist.remove('breck')
+    def lessthan(self, other):
+        pass
 
-mylist.append(203)
-
-mylist.reverse()
-
-mylist.count(1)
-
-mylist.insert(1, "amber")
-
-print(mylist)
-
-secondlist = [1, 2]
-
-thirdlist = mylist + secondlist
-print(thirdlist)
+    def greaterthan(self, other):
+        return self.name >= other.name
